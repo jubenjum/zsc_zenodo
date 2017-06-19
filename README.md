@@ -37,7 +37,7 @@ these commands:
 ```
     $ crontab -e
     Edit ...
-    */30 * * * * cd /fhgfs/bootphon/scratch/jbenjumea/sandbox/zsc_zenodo && bash get_zenodo 
+    */30 * * * * /home/zerospeech/zsc_zenodo/get_zenodo
 ```
 
 Evaluation
