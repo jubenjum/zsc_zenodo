@@ -3,7 +3,7 @@
 #source activate zsc_zenodo
 
 # variables used by get_zenodo.py
-export SOURCE=/fhgfs/bootphon/scratch/jbenjumea/sandbox/zsc_zenodo
+export SOURCE=/home/zerospeech/zsc_zenodo
 export ZENODO_DB="${SOURCE}/zsc_zenodo.db"
 export LOG="${SOURCE}/log/zsc_zenodo.log"
 #export ZENODO_OAI='https://zenodo.org/oai2d?verb=ListRecords&set=user-zerospeech2017_tests&metadataPrefix=oai_dc'
