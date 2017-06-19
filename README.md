@@ -23,6 +23,8 @@ Query and donwloading zenodo
 
 ```
     $ conda create --name zsc_zenodo --file requirements_3.txt
+    $ pip install sickle
+    $ pip install requests
 ```
 
 To query and download the doi files you will need to set your own 
