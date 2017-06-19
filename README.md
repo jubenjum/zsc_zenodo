@@ -71,7 +71,7 @@ in in `zsc_zenodo/bin/track2`, follow the decrypt part of the following commands
     $ tar c resources | openssl enc -aes-256-cbc -e > resources.tar.enc 
 
     # decrypt
-    $ openssl enc -aes-256-cbc -d -in resources.tar.enc | tar xz
+    $ openssl enc -aes-256-cbc -d -in resources.tar.enc | tar x
     $ cd resources
     $ bunzip2 *
 ```
