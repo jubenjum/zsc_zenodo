@@ -1,7 +1,11 @@
 #!/bin/bash
 
 echo "-------------------- BEGING AT: " $(date)
-cd /fhgfs/bootphon/scratch/jbenjumea/sandbox/zsc_zenodo
-source config
-python get_zenodo.py
+
+source /fhgfs/bootphon/scratch/jbenjumea/sandbox/zsc_zenodo/config
+ 
+source /home/jbenjumea/.conda/envs/zsc_zenodo/bin/activate /home/jbenjumea/.conda/envs/zsc_zenodo/
+
+python /fhgfs/bootphon/scratch/jbenjumea/sandbox/zsc_zenodo/get_zenodo.py
+
 echo "-------------------- END AT: " $(date)

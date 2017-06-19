@@ -1,6 +1,6 @@
 
 # conda virtual environment
-source activate zsc_zenodo
+#source activate zsc_zenodo
 
 # variables used by get_zenodo.py
 export SOURCE=/fhgfs/bootphon/scratch/jbenjumea/sandbox/zsc_zenodo
@@ -8,6 +8,7 @@ export ZENODO_DB="${SOURCE}/zsc_zenodo.db"
 export LOG="${SOURCE}/log/zsc_zenodo.log"
 #export ZENODO_OAI='https://zenodo.org/oai2d?verb=ListRecords&set=user-zerospeech2017_tests&metadataPrefix=oai_dc'
 export SOCKET_NAME='zsc_zenodo'
+export ACCESS_TOKEN='xYH0ScIuRobTI2vPOXHiUqNs83FdTKaluWSENHenJUoKJrl0xr1n7vmx4QfQ'
 
 export ZENODO_OAI='https://zenodo.org/oai2d?verb=ListRecords&set=user-zerospeech2017&metadataPrefix=oai_dc'
 

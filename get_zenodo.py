@@ -12,7 +12,6 @@ from collections import namedtuple
 from sickle import Sickle # pip install sickle
 import requests # pip install requests
 
-# global vars ...
 ENV = namedtuple('ENV_', ['ACCESS_TOKEN', 'ZENODO_DB', 'LOG', 
                          'ZENODO_OAI', 'SOCKET_NAME'])  
 
