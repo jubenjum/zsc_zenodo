@@ -23,6 +23,8 @@ Query and donwloading zenodo
 
 ```
     $ conda create --name zsc_zenodo --file requirements_3.txt
+    $ pip install sickle
+    $ pip install requests
 ```
 
 To query and download the doi files you will need to set your own 
@@ -35,7 +37,7 @@ these commands:
 ```
     $ crontab -e
     Edit ...
-    */30 * * * * cd /fhgfs/bootphon/scratch/jbenjumea/sandbox/zsc_zenodo && bash get_zenodo 
+    */30 * * * * /home/zerospeech/zsc_zenodo/get_zenodo
 ```
 
 Evaluation
@@ -71,7 +73,7 @@ in in `zsc_zenodo/bin/track2`, follow the decrypt part of the following commands
     $ tar c resources | openssl enc -aes-256-cbc -e > resources.tar.enc 
 
     # decrypt
-    $ openssl enc -aes-256-cbc -d -in resources.tar.enc | tar xz
+    $ openssl enc -aes-256-cbc -d -in resources.tar.enc | tar x
     $ cd resources
     $ bunzip2 *
 ```
