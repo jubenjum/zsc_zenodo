@@ -303,7 +303,10 @@ def nlp(disc_clsdict, gold_clsdict, fragments_within, fragments_cross,
     # calculating the pairs/clusters found in the discovery algoritms, 
     # it's stored on the 'nlp' output file, used to compare diff algoritms
     nclust = len(disc_clsdict.items())    
-    npairs = sum([nCr(len(v[1]), 2) for v in disc_clsdict.items()])
+    try:
+        npairs = sum([nCr(len(v[1]), 2) for v in disc_clsdict.items()])
+    except:
+        npairs = -1
 
     with open(path.join(dest, 'nlp'), 'w') as fid:
         fid.write(pretty_score_nlp(nc, cc, 'NLP total',
